@@ -189,7 +189,32 @@
             </div>
         </div>
     </div>
-    <!--  -->
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="banner-box">
+            <ul>
+                <li><img src="img/1-4-0.jpg" alt=""></li>
+                <li><img src="img/1-4-1.jpg" alt=""></li>
+                <li><img src="img/1-4-2.jpg" alt=""></li>
+                <li><img src="img/1-4-3.jpg" alt=""></li>
+                <li><img src="img/1-4-4.jpg" alt=""></li>
+                <li><img src="img/1-4-5.jpg" alt=""></li>
+                <li><img src="img/1-4-6.jpg" alt=""></li>
+                <li><img src="img/1-4-7.jpg" alt=""></li>
+                <li><img src="img/1-4-0.jpg" alt=""></li>
+                <li><img src="img/1-4-1.jpg" alt=""></li>
+                <li><img src="img/1-4-2.jpg" alt=""></li>
+                <li><img src="img/1-4-3.jpg" alt=""></li>
+                <li><img src="img/1-4-4.jpg" alt=""></li>
+                <li><img src="img/1-4-5.jpg" alt=""></li>
+                <li><img src="img/1-4-6.jpg" alt=""></li>
+                <li><img src="img/1-4-7.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="list"></div>
+        <a href="javascript:void(0)" class="left-arrow"></a>
+        <a href="javascript:void(0)" class="right-arrow"></a>
+    </div>
 </body>
 </html>
 
@@ -210,6 +235,66 @@
     $(".s3").mouseout(function(){
         $(this).children().css({
             "display":""
+        })
+    })
+    // 轮播图
+    var leftArrow = $(".left-arrow");
+    var rightArrow = $(".right-arrow");
+    var imgWidth = $("li img:first-child").eq(0).width();
+    var flag = true;
+    $(document).ready(function(){
+        var timer = 3000;
+        var size = $('.banner-box ul li').size();
+        for(var i=1;i<=size;i++){
+			$('.list').append('<a href="javascript:(void)"></a>')
+        }     
+        $("banner-box ul li").eq(0).show();
+        $('.list a').eq(0).addClass('active')
+		$('.list a').mouseover(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			var index = $(this).index();
+			i=index;
+			$('.banner-box ul li').eq(index).stop().fadeIn(300).siblings().stop().fadeOut(300);
+        });
+        $(".banner .left-arrow").click(function(){
+            i = index;
+            $('.banner-box ul li').eq(i).stop().fadeIn(300).siblings().stop().fadeOut(300);
+        })
+
+        
+        var time = setInterval(move,timer);
+        var index = 0;
+        function move(){
+			i++;
+			if(i==size){
+				i=0;
+			}
+
+			$('.list a').eq(i).addClass('active').siblings().removeClass('active');
+			$('.banner-box ul li').eq(i).fadeIn(300).siblings().fadeOut(300);
+		}
+
+		$('.banner').hover(function(){
+			clearInterval(time);
+		},function(){
+			time = setInterval(move,timer);
+        });
+        leftArrow.on("click", function() {
+            //左箭头
+            flag = false;
+            clearInterval(timer);
+            if(index == 0){
+               i =index;
+            }
+            index--;
+            move();
+        })
+        rightArrow.on("click", function() {
+            //右箭头
+            flag = false;
+            clearInterval(timer);
+            index++;
+            move();
         })
     })
 </script>
