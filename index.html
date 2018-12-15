@@ -214,10 +214,149 @@
         <div class="list"></div>
         <a href="javascript:void(0)" class="left-arrow"></a>
         <a href="javascript:void(0)" class="right-arrow"></a>
+        <!-- 选项栏分类 -->
+        <div class="option-tab">
+            <div class="tab">
+                <ol>
+                    <li class="tab-li">
+                        <div class="tab-info">
+                            <div class="tab-title"><a href="#">手机</a></div>  
+                            <a href="#"><span>荣耀</span></a>
+                            <a href="#"><span>HUAWEI P系列</span></a>       
+                        </div>   
+                        <div class="tab-box tab-box1">
+                            <ul>
+                                <li class="tab-box-li">
+                                     <a href="#">
+                                        <img src="img/1-5-1.png" alt="">
+                                        <span>荣耀</span>
+                                    </a>
+                                </li>
+                                <li class="tab-box-li">
+                                    <a href="#">
+                                       <img src="img/1-5-2.png" alt="">
+                                       <span>HUAWEI nova系列</span>
+                                   </a>
+                               </li>
+                               <li class="tab-box-li">
+                                    <a href="#">
+                                        <img src="img/1-5-3.png" alt="">
+                                        <span>HUAWEI P系列</span>
+                                    </a>
+                                </li>
+                                <li class="tab-box-li">
+                                     <a href="#">
+                                        <img src="img/1-5-4.png" alt="">
+                                        <span>华为畅享系列</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="tab-box-li">
+                                    <a href="#">
+                                        <img src="img/1-5-5.png" alt="">
+                                        <span>HUAWEI Mate系列</span>
+                                    </a>
+                                </li>
+                                <li class="tab-box-li">
+                                    <a href="#">
+                                        <img src="img/1-5-6.png" alt="">
+                                        <span>HUAWEI 麦芒系列</span>
+                                    </a>
+                                </li>
+                                <li class="tab-box-li">
+                                    <a href="#">
+                                        <img src="img/1-5-7.png" alt="">
+                                        <span>移动4G+专区</span>
+                                    </a>
+                                </li>
+                                <li class="tab-box-li">
+                                    <a href="#">
+                                        <img src="img/1-5-8.png" alt="">
+                                        <span>荣耀畅玩系列</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="tab-box-btn">
+                                    <a href="#" class="">查看全部</a>
+                                </li>
+                            </ul>
+                        </div>                   
+                    </li>
+                    <li class="tab-li">
+                        <div class="tab-info">
+                            <div class="tab-title"><a href="#">笔记本 & 平板</a></div>  
+                            <a href="#"><span>平板电脑</span></a>
+                            <a href="#"><span>笔记本电脑</span></a>       
+                        </div> 
+                        <div class="tab-box tab-box2">
+                                <ul>
+                                    <li class="tab-box-li">
+                                         <a href="#">
+                                            <img src="img/1-6-1.png" alt="">
+                                            <span>平板电脑</span>
+                                        </a>
+                                    </li>
+                                    <li class="tab-box-li">
+                                        <a href="#">
+                                           <img src="img/1-6-2.png" alt="">
+                                           <span>笔记本电脑</span>
+                                       </a>
+                                   </li>
+                                   <li class="tab-box-li">
+                                        <a href="#">
+                                            <img src="img/1-6-3.png" alt="">
+                                            <span>笔记本配件</span>
+                                        </a>
+                                    </li>
+                                    <li class="tab-box-li">
+                                        <li class="tab-box-btn">
+                                            <a href="#" class="">查看全部</a>
+                                        </li>
+                                    </li>
+                              </ul>
+                            </div>                    
+                    </li>
+                    <li class="tab-li">
+                        <div class="tab-info">
+                            <div class="tab-title"><a href="#">智能穿戴</a></div>  
+                            <a href="#"><span>手环</span></a>
+                            <a href="#"><span>手表</span></a>    
+                            <a href="#"><span> VR</span></a>      
+                        </div>                      
+                    </li>
+                    <li class="tab-li">
+                        <div class="tab-info">
+                            <div class="tab-title"><a href="#">智能家居</a></div>  
+                            <a href="#"><span>路由器</span></a>
+                            <a href="#"><span>电视盒子</span></a>    
+                            <a href="#"><span>照明</span></a>     
+                        </div>                      
+                    </li>
+                    <li class="tab-li">
+                        <div class="tab-info">
+                            <div class="tab-title"><a href="#">通用配件</a></div>  
+                            <a href="#"><span>移动电源</span></a>
+                            <a href="#"><span>耳机</span></a>    
+                            <a href="#"><span>音响</span></a>     
+                        </div>                      
+                    </li>
+                    <li class="tab-li">
+                        <div class="tab-info">
+                            <div class="tab-title"><a href="#">专属配件</a></div>  
+                            <a href="#"><span>保护壳</span></a>
+                            <a href="#"><span>保护套</span></a> 
+                            <a href="#"><span>贴膜</span></a>        
+                        </div>                      
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
-
 
 <script src="js/index.js"></script>
 <script src="./jquery-1.11.1.js"></script>
@@ -234,6 +373,26 @@
     })
     $(".s3").mouseout(function(){
         $(this).children().css({
+            "display":""
+        })
+    })
+    // 轮播图中的选项栏分类
+    $(".tab-li").mousemove(function(){
+        $(this).css({
+            "border-radius": "0 0 0 0",
+            "background": "#ffffff"
+        });
+        $(this).children(1).css({
+            "display":"block"
+        })
+    })
+    $(".tab-li").mouseout(function(){
+        $(this).css({
+            "border-radius": "10px 10px 0 0",
+            "background": "rgba(255,255,255,0.9",
+            "color":"red"
+        })
+        $(this).children(1).css({
             "display":""
         })
     })
@@ -297,4 +456,6 @@
             move();
         })
     })
+</script>
+    
 </script>
