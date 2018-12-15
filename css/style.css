@@ -428,7 +428,7 @@ body{
     top: 18px;
     height: 443px;
     background: #fff;
-    padding: 24px 22px 0 28px;
+    padding: 24px 30px 0 28px;
     border-radius: 0 10px 10px 0;
     box-shadow: 0 0 46px rgba(0,0,0,0.1);
     top: 0;
@@ -441,7 +441,13 @@ body{
     width: 680px;
 }
 .tab-box.tab-box2{
-    width: 230px;
+    width: 250px;
+}
+.tab-box.tab-box3{
+    width: 880px;
+}
+.tab-box.tab-box4{
+    width: 500px;
 }
 .tab-box ul{
     width: 204px;
@@ -452,6 +458,10 @@ body{
 .tab-box ul .tab-box-li{
     float: left;
     margin-bottom: 24px;
+}
+.tab-box ul .tab-box-li:hover{
+    border-radius: 10% 10% 10% 10%;
+    background: #f8f8f8;
 }
 .tab-box ul .tab-box-li a{
     display: block;
@@ -518,3 +528,4 @@ body{
     top: 16px;
     left: -1px;
 }
+
