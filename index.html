@@ -605,6 +605,142 @@
             
         </div>
     </div>
+    <!-- 内容 -->
+    <div class="home-menu">
+        <div class="home-menu-list">
+            <div class="home1">
+                <div class="h">
+                    <div class="home-main">
+                        <!-- 内容的顶部 -->
+                       <ul class="b">
+                            <!-- 登录 / 注册列表  -->
+                           <li class="s1">
+                                <div class="s1-1">
+                                    <div class="s1-h">
+                                        <img src="img/1-10-7.png" alt="" srcset="">
+                                    </div>
+                                    <div class="s1-o">
+                                        <div class="lo">
+                                            您好！请
+                                            <a href="javascript:;">登录</a>
+                                            <a href="javascript:;">登录</a>
+                                            <span>&nbsp;/&nbsp;</span>
+                                            <a href="javascript:;">注册</a>
+                                        </div>
+                                        <div class="go">
+                                            <a href="#" class="go-g">新人福利</a>
+                                            <a href="#" class="go-o">会员频道</a>
+                                        </div>
+                                    </div>
+                                </div>
+                           </li>
+                           <!--  企业换购-->
+                           <li class="s2">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="p-img">
+                                                <img class="img1" src="image/2-1-1.png" alt="">
+                                            </div>
+                                            <div class="p-p">企业购特惠</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="p-img">
+                                                <img class="img2" src="image/2-1-1.png" alt="">
+                                            </div>
+                                            <div class="p-p">以旧换新</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="p-img">
+                                                <img class="img3" src="image/2-1-1.png" alt="">
+                                            </div>
+                                            <div class="p-p">会员领券</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="p-img">
+                                                <img class="img4" src="image/2-1-1.png" alt="">
+                                            </div>
+                                            <div class="p-p">优选配件</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="p-img">
+                                                <img class="img5" src="image/2-1-1.png" alt="">
+                                            </div>
+                                            <div class="p-p">新品上市</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="p-img">
+                                                <img class="img6" src="image/2-1-1.png" alt="">
+                                            </div>
+                                            <div class="p-p">优享购</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                           </li>
+                           <!-- 公告栏 -->
+                           <li class="s3">
+                               <div class="p-pp">
+                                   <div class="p-pp1">
+                                       <a href="#">公告</a>
+                                   </div>
+                                   <div class="p-pp2">
+                                       <ul class="cp" id="demo">
+                                           <li><a href="javascript:;">荣耀FlyPods系列无线耳机 新品上市</a></li>
+                                           <li><a href="javascript:;">抢购M5青春版，限量送Discovery免费视频权益</a></li>
+                                           <li><a href="javascript:;">12.12智能家居狂欢盛典</a></li>
+                                           <li><a href="javascript:;">HUAWEI FreeBuds 2无线耳机系列 新品上市</a></li>
+                                           <li><a href="javascript:;">HUAWEI Mate 20系列购机赢3999元携程礼品卡中奖名单</a></li>
+                                           <li><a href="javascript:;">荣耀FlyPods系列无线耳机 新品上市</a></li>
+                                           <li><a href="javascript:;">荣耀FlyPods系列无线耳机 新品上市</a></li>
+                                       </ul>                         
+                                   </div>
+                               </div>
+                               <div class="p-p1">
+                                   <ul class="clearfix">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img class="img6" src="image/2-1-1.png" alt="" srcset="">
+                                                </span>
+                                                优购码
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img class="img7" src="image/2-1-1.png" alt="" srcset="">
+                                                </span>
+                                                实名认证
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>
+                                                    <img class="img8" src="image/2-1-1.png" alt="" srcset="">
+                                                </span>
+                                                补够保障
+                                            </a>
+                                        </li>
+                                   </ul>
+                               </div>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
 
@@ -706,5 +842,30 @@
         })
     })
 </script>
+<script>
+function Scroll(){}
+Scroll.prototype.upScroll=function(dom,_h,interval){
+    var dom=document.getElementById(dom);
+    var timer=setTimeout(function(){
+        var _field=dom.firstElementChild;
+        _field.style.marginTop=_h;
+        clearTimeout(timer);},1000)
     
+      
+    $("#demo li").mouseover(function(){
+        clearInterval(timer1);
+    })
+    
+    var timer1 = setInterval(function(){
+        var _field=dom.firstElementChild;
+        _field.style.marginTop="0px";
+        dom.appendChild(_field);
+        var _field=dom.firstElementChild
+        _field.style.marginTop=_h;},interval)
+    }
+    var myScroll=new Scroll();
+    myScroll.upScroll("demo","-43px",3000);
+    $("#demo li").mouseout(function(){
+        myScroll.upScroll("demo","-43px",3000);
+    })
 </script>

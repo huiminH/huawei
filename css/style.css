@@ -119,6 +119,7 @@ body{
     border-radius: 0 0 8px 8px;
     display: none;
     box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    z-index: 1000;
 }
 /* 客户服务 */
 .nav .nav-1 .nav-right .b .b-server{
@@ -306,6 +307,7 @@ body{
     height: 550px;
     overflow: hidden;
     position: relative;
+    border-radius: 0 0 10% 10%;
 }
 .banner .banner-box{
     width: 1263px;
@@ -327,7 +329,7 @@ body{
 }
 .banner .list{
     position: absolute;
-    top: 500px;
+    top: 480px;
     right: 90px;
 }
 .list a{
@@ -379,7 +381,7 @@ body{
 /* 选项栏分类 */
 .option-tab{
     position: absolute;
-    left: 16px;
+    left: 35px;
     top: 18px;
     width: 200px;
     z-index: 99;
@@ -529,3 +531,256 @@ body{
     left: -1px;
 }
 
+/*  内容的顶部 */
+.home-menu .home-menu-list{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.home1{
+    position: relative;
+}
+.home1 .h .home-main{
+    position: relative;
+    top: -42px;
+    height: 34px;
+}
+/* 登录 / 注册列表 */
+.home1 .h .home-main ul.b{
+    width: 1200px;
+    height: 88px;
+    background: #fff;
+    text-align:center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 200;
+    box-shadow: 0 2px 26px rgba(0,0,0,0.07);
+}
+.home1 .h .home-main .s1{
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 55px;
+    margin-top: 17px;
+    border-right: 1px solid #ededed;
+}
+.home1 .h .home-main .s1 .s1-1{
+    padding: 0;
+    padding-left: 26px;
+    text-align: left;
+    color: #3a3a3a;
+}
+.home1 .h .home-main .s1 .s1-1 .s1-h{
+    width: 52px;
+    height: 52px;
+    margin-right: 17px;
+    float: left;
+}
+.h .home-main .s1 .s1-1 .s1-h img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50% 50%;
+}
+.h .home-main .s1 .s1-1 .s1-o{
+    float: left;
+}
+.lo{
+    margin-top: 1px;
+    font-size: 14px;
+    color: #999;
+}
+.lo a,span{
+    color: #333;
+}
+.go{
+    margin-top: 6px;
+}
+.go .go-g{
+    width: 66px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #fff;
+    border: 1px solid #e47b7f;
+    color: #de5b60;
+    margin-right: 8px;
+    font-size: 13px;
+    display: inline-block;
+    border-radius:5px;
+    font-size: 13px; 
+}
+.go .go-o{
+    display: inline-block;
+    width: 68px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    background: #595454;
+    color: #fde4b3;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.lo a:hover {
+    color: #e47b7f;
+}
+.go .go-g:hover{
+    color: white;
+    background: #e47b7f;
+}
+/* 企业换购 */
+.home1 .h .s2{
+    float: left;
+    position: relative;
+    width: 660px;
+    margin-top: 17px;
+}
+.home1 .h .s2 ul{
+    display: table;
+    width: 100%;
+}
+.home1 .h .s2 ul li{
+    text-align: center;
+    display: table-cell;
+    float: none;
+    width: 104px;
+    position: relative;
+}
+.home1 .h .s2 ul li a{
+    text-align: center;
+    width: 100%;
+    min-width: 48px;
+    max-width: 84px;
+    margin: 0 auto;
+}
+.home1 .h .s2 ul li a .p-img{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.home1 .h .s2 ul li a .p-img img{
+    position: absolute;
+    width: auto;
+    width: auto;
+}
+.home1 .h .s2 ul li a .p-img .img1{
+    left: 0;
+}
+.home1 .h .s2 ul li a .p-p{
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #777;
+    font-size: 13px;
+}
+.home1 .h .s2 ul li a .p-img .img2{
+    left: -40px;
+}
+.home1 .h .s2 ul li a .p-img .img3{
+    left: -80px;
+}
+.home1 .h .s2 ul li a .p-img .img4{
+    left: -120px;
+}
+.home1 .h .s2 ul li a .p-img .img5{
+    left: -160px;
+}
+.home1 .h .s2 ul li a .p-img .img6{
+    left: -200px;
+}
+.home1 .h .s2 ul li:hover a .p-p{
+    color: #de5b60;
+}
+/* 公告栏 */
+.home1 .h .s3{
+    width: 266px;
+    height: 88px;
+    border-left: 1px solid #ededed;
+    float: left;
+    position: relative;
+}
+.home1 .h .s3 .p-pp{
+    height: 43px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.home1 .h .s3 .p-pp .p-pp1{
+    float: left;
+    display: block;
+    font-weight: bold;
+    margin: 10px 8px 0 17px;
+}
+.home1 .h .s3 .p-pp .p-pp1 a{
+    color: #777;
+    font-size: 14px;
+}
+.home1 .h .s3 .p-pp .p-pp2{
+    height: 43px;
+    overflow: hidden;
+    text-align: left;
+    width: 190px;
+    position: relative;
+}
+.home1 .h .s3 .p-pp .p-pp2 .cp{
+    /* height: 258px; */
+    float: left;
+}
+.home1 .h .s3 .p-pp .p-pp2 .cp li{
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 43px;
+    line-height: 43px;
+    font-size: 12px;
+}
+.home1 .h .s3 .p-pp .p-pp2 .cp li a{
+    color: #6f6f6f;
+}
+.home1 .h .s3 .p-pp .p-pp2 .cp li:first-child{
+    transition: margin-top .8s;
+}
+.home1 .h .s3 .p-pp .p-pp2 .cp li a:hover{
+    color: #de5b60;
+}
+.home1 .h .s3 .p-p1 li{
+    height: 42px;
+    line-height: 42px;
+    width: 88px;
+    float: left;
+    position: relative;
+}
+.home1 .h .s3 .p-p1 li a{
+    display: block;
+    color: #666;
+    font-size: 13px;
+}
+.home1 .h .s3 .p-p1 li a:hover{
+    color: #de5b60;
+}
+.home1 .h .s3 .p-p1 li a span{
+    margin-right:2px;
+    display:  inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    overflow: hidden;
+}
+.home1 .h .s3 .p-p1 li a span img{
+    width: auto;
+    width: auto;
+    position: absolute;
+}
+.home1 .h .s3 .p-p1 li a span .img6{
+    left: -240px;
+}
+.home1 .h .s3 .p-p1 li a span .img7{
+    left: -260px;
+}
+.home1 .h .s3 .p-p1 li a span .img8{
+    left: -280px;
+}
