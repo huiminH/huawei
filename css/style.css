@@ -1146,9 +1146,10 @@ div{
     position: relative;
 }
 /* 手机 */
-.phone{
+.shopping .phone{
     width: 1200px;
     float: left;
+    height: 977px;
 }
 .ph1{
     margin-left: 28px;
@@ -1252,6 +1253,7 @@ div{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 13px;
 }
 .wear-desc{
     display: block;
